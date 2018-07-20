@@ -1,0 +1,8 @@
+---
+- hosts: test-kitchen
+  pre_tasks:
+
+  roles:
+    - test-role
+
+  post_tasks:
