@@ -10,7 +10,8 @@ ansible_cleanup:
 
 ansible_kitchen_init: ansible_create_dirs
 	cd roles/test-role ; kitchen init --driver=docker --provisioner=anisble-playbook
-	mkdir roles/test-roles/integration/default
+	mkdir roles/test-role/test/integration/default
+	mkdir roles/test-role/test/integration/default/serverspec
 
 
 #
