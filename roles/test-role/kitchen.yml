@@ -3,10 +3,11 @@ driver:
   name: docker
 
 provisioner:
-  name:  ansible_playbook
-  hosts: test-kitchen
-  ansible_verbose: false
+  ansible_verbose:   false
   ansible_verbosity: 2
+  hosts:             test-kitchen
+  name:              ansible_playbook
+#  requirements_path: requirements.yml
 
 platforms:
   - name: ubuntu-16.04
